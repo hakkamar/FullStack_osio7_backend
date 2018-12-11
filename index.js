@@ -41,7 +41,7 @@ app.use('/api/login', loginRouter)
 app.use('/api/users', usersRouter)
 app.use('/api/blogs', blogRouter)
 
-//app.use(middleware.error)
+app.use(middleware.error)
 
 const server = http.createServer(app)
 
